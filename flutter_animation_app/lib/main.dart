@@ -65,7 +65,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
       ),
       builder: (BuildContext context, Widget? child) {
         return Transform.rotate(
-          angle: _controller.value * 20.0 * math.pi,
+          angle: _controller.value * 10.0 * math.pi,
           child: child,
         );
       },
