@@ -38,7 +38,7 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(seconds: 2),
+    duration: const Duration(seconds: 1),
     vsync: this,
   )..repeat();
 
@@ -58,14 +58,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
         color: Colors.white,
         child: const Center(
           child: Text(
-            'SUNIL !!!1',
+            'SUNIL KUMAR GUPTA WHO I AM ? !!!1',
             style: TextStyle(fontSize: 10, color: Colors.blue),
           ),
         ),
       ),
       builder: (BuildContext context, Widget? child) {
         return Transform.rotate(
-          angle: _controller.value * 2.0 * math.pi,
+          angle: _controller.value * 20.0 * math.pi,
           child: child,
         );
       },
